@@ -3,26 +3,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
-    <LinearLayout 
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:orientation="vertical">
-        
-            <TextView android:id="@+id/tvName"
-                android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre del empleado"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtPosition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Puesto"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/btnEdit"
                 android:layout_width="wrap_content"
-                android:hint="@string/nombre"
-                android:autofillHints="@string/nombre"/>
-            <TextView android:id="@+id/tvPosition"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:hint="@string/cargo"
-                android:autofillHints="@string/cargo"/>
-            <TextView android:id="@+id/tvSalary"
+                android:text="Editar"/>
+
+            <Button
+                android:id="@+id/btnDelete"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="@string/salario"
-                android:autofillHints="@string/salario"/>
+                android:text="Eliminar"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
     </LinearLayout>
-    
+
+
 </androidx.cardview.widget.CardView>
