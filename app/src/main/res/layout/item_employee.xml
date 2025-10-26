@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical">
+        
+            <TextView android:id="@+id/tvName"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="@string/nombre"
+                android:autofillHints="@string/nombre"/>
+            <TextView android:id="@+id/tvPosition"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="@string/cargo"
+                android:autofillHints="@string/cargo"/>
+            <TextView android:id="@+id/tvSalary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/salario"
+                android:autofillHints="@string/salario"/>
+    </LinearLayout>
+    
+</androidx.cardview.widget.CardView>
